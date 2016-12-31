@@ -66,7 +66,7 @@ public class PlayState extends GameState implements ControllerListener{
 	
 	@Override
 	public void init() {
-		controller = Controllers.getControllers().first();
+		
 		Controllers.addListener(this);
 		spawnTimer = 0;
 		
