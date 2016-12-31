@@ -89,6 +89,9 @@ public class GameOverState extends GameState{
 			}
 			gsm.setState(GameStateManager.MENU);
 		}
+		if(!newHighScore){
+			return;
+		}
 		if(Gdx.input.isKeyJustPressed(Keys.UP)){
 			if(newName[currentChar] == ' '){
 				newName[currentChar] = 'Z';
